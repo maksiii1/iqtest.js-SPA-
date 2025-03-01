@@ -40,98 +40,67 @@ body {
   cursor: pointer;
 }
 
-.container {
-  position: relative;
-  height: calc(100% - 46px);
+.main {
   background-image: url("../images/rain_bk.png");
   background-size: cover;
+  min-height: calc(100vh - 46px);
+  padding-bottom: 20px;
 }
 
-.info__text1 {
-  position: relative;
-  top: calc(73px - 46px);
-  color: rgba(255, 255, 255, 1);
+.main__info1 {
+  color: rgb(255, 255, 255);
+  padding-top: 27px;
+  font-size: 18px;
   font-family: PT Serif, serif;
   text-align: center;
-  height: 52px;
-  line-height: 23.85px;
-  letter-spacing: 2.5px;
 }
 
-.info__text2,
-.info__text3 {
+.main__info2 {
   color: rgba(255, 199, 0, 1);
+  padding-top: 22px;
   text-align: center;
-  font-family: Yeseva One, serif;
   font-size: 30px;
-  margin: auto;
+  font-family: Yeseva One, serif;
 }
 
-.info__text2 {
-  position: relative;
-  top: calc(113px - 98px);
-  width: 131px;
-}
-
-.info__text3 {
-  position: relative;
-  top: calc(147px - 123px);
-  width: 252px;
-}
-
-.container__button-start {
-  position: relative;
-  top: calc(370px - 133px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 189px;
-  height: 41px;
-  border-radius: 20px;
-  margin: auto;
-  background-color: rgba(255, 199, 0, 1);
+.main__button {
   color: rgba(13, 12, 17, 1);
+  background-color: rgba(255, 199, 0, 1);
+  margin: 217px auto 0;
+  width: 189px;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
   font-family: Merriweather, serif;
-  font-size: 14px;
-  line-height: 17.6px;
 }
 
-.info__text4 {
-  position: relative;
-  top: calc(433px - 174px);
-  width: 286px;
-  height: 81px;
-  font-family: PT Serif, serif;
-  margin: auto;
+.main__info3 {
+  padding-top: 21px;
   text-align: center;
 }
 
-.text4__span1 {
+.info3__span1 {
   color: rgba(255, 199, 0, 1);
 }
 
-.text4__span2 {
+.info3__span2 {
   color: rgba(255, 255, 255, 1);
 }
 
-.details__button {
-  width: 16px;
+.main__arrow {
+  background-image: url("../images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   height: 16px;
-  position: relative;
-  top: calc(525px - 244px);
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+  width: 100%;
+  margin-top: 20px;
 }
 
-.info__text5 {
-  width: 68px;
-  height: 13px;
-  margin: auto;
+.main__details {
   color: rgba(255, 255, 255, 1);
-  position: relative;
-  top: calc(544px - 260px);
+  padding-top: 3px;
+  text-align: center;
+  font-family: PT Serif, serif;
+  font-size: 8px;
 }
