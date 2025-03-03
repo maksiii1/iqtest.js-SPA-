@@ -14,11 +14,24 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Merriweather:700"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="sidebar">
+      <div class="slidebar_menu">
+        <div class="menu__cross" onclick="show_hide_sidebar()"></div>
+        <div class="menu__text-main">ГЛАВНАЯ</div>
+        <div class="menu__text-info">ИНФОРМАЦИЯ О ТЕСТЕ</div>
+        <div class="menu__text-test">ПРОЙТИ ТЕСТ</div>
+      </div>
+    </div>
+
     <div class="container">
       <div class="header">
-        <div class="header__burger">
+        <div class="header__burger" onclick="show_hide_sidebar()">
           <div class="burger__bar"></div>
           <div class="burger__bar"></div>
           <div class="burger__bar"></div>
@@ -41,5 +54,7 @@
         <div class="main__details">Подробнее</div>
       </div>
     </div>
+
+    <script src="../functional/script.js"></script>
   </body>
 </html>

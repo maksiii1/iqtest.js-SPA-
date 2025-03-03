@@ -10,6 +10,49 @@ body {
   overflow: auto;
 }
 
+.sidebar {
+  overflow: auto;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 25%;
+  height: 100%;
+  background-color: rgba(24, 24, 24, 1);
+}
+
+@media screen and (max-width: 720px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.menu__cross {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-image: url("../images/cross.png");
+  background-size: cover;
+  top: 18px;
+  left: 89%;
+}
+
+.slidebar_menu {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  margin: 110px 0 0 23px;
+  font-family: Roboto, sans-serif;
+}
+
+.menu__text-main,
+.menu__text-info {
+  color: rgba(255, 255, 255, 1);
+}
+
+.menu__text-test {
+  color: rgba(244, 206, 12, 1);
+}
+
 .header {
   position: relative;
   z-index: 1;
@@ -28,6 +71,11 @@ body {
   position: absolute;
   top: 17px;
   left: 15px;
+}
+
+.header__burger:hover,
+.menu__cross:hover {
+  cursor: pointer;
 }
 
 .burger__bar {
