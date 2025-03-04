@@ -202,10 +202,9 @@ body {
 }
 
 .info__quote-2 {
-  position: absolute;
   background-image: url("../images/quotes_2.png");
   background-size: cover;
   width: 23.25px;
   height: 22.45px;
-  margin-left: 299px;
+  margin-left: 240px;
 }
