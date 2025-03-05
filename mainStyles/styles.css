@@ -41,7 +41,7 @@ body {
   left: 89%;
 }
 
-.slidebar_menu {
+.sidebar_menu {
   display: flex;
   flex-direction: column;
   gap: 27px;
@@ -49,12 +49,12 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-.menu__text-main,
-.menu__text-info {
+.menu__item-home,
+.menu__item-info {
   color: rgba(255, 255, 255, 1);
 }
 
-.menu__text-test {
+.menu__item-start-test {
   color: rgba(244, 206, 12, 1);
 }
 
@@ -100,7 +100,7 @@ body {
   padding-bottom: 20px;
 }
 
-.main__info1 {
+.main__subtitle {
   color: rgb(255, 255, 255);
   padding-top: 27px;
   font-size: 18px;
@@ -108,7 +108,7 @@ body {
   text-align: center;
 }
 
-.main__info2 {
+.main__title {
   color: rgba(255, 199, 0, 1);
   padding-top: 22px;
   text-align: center;
@@ -127,7 +127,7 @@ body {
   font-family: Merriweather, serif;
 }
 
-.main__info3 {
+.main__additional-info {
   padding-top: 21px;
   text-align: center;
 }
@@ -177,7 +177,7 @@ body {
   visibility: visible;
 }
 
-.details__block-1 {
+.details__benefits {
   overflow-y: auto;
   height: 100%;
   background-image: radial-gradient(
@@ -195,7 +195,7 @@ body {
   padding-top: 82px;
 }
 
-.block-1__info {
+.benefits__info {
   width: 258px;
   letter-spacing: 1px;
   margin: auto;
@@ -203,7 +203,7 @@ body {
   text-align: center;
 }
 
-.block-1__quote-1 {
+.benefits__quote-1 {
   position: absolute;
   top: 50px;
   margin-left: -12px;
@@ -213,7 +213,7 @@ body {
   height: 22.45px;
 }
 
-.block-1__quote-2 {
+.benefits__quote-2 {
   background-image: url("../images/quotes_2.png");
   background-size: cover;
   width: 23.25px;
@@ -222,7 +222,7 @@ body {
   margin-bottom: 60px;
 }
 
-.details__block-2 {
+.details__recommendations {
   overflow: auto;
   background-color: rgb(243, 243, 242);
   background-image: url("../images/brain.png");
@@ -231,7 +231,7 @@ body {
   background-position: center 79%;
 }
 
-.block-2__info {
+.recommendations__info {
   width: 93%;
   margin: auto;
   font-family: PT Serif, serif;
@@ -242,12 +242,12 @@ body {
 }
 
 @media screen and (min-width: 720px) {
-  .block-2__info {
+  .recommendations__info {
     text-align: center;
   }
 }
 
-.block-2__button {
+.recommendations__button {
   color: rgba(13, 12, 17, 1);
   background-color: rgba(255, 199, 0, 1);
   margin: 200px auto 0;
