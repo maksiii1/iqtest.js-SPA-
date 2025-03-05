@@ -4,3 +4,10 @@ function show_hide_sidebar() {
     sidebar.classList.toggle("open");
   }
 }
+
+function show_hide_details() {
+  const details = document.getElementsByClassName("container__details")[0];
+  if (details) {
+    details.classList.toggle("open");
+  }
+}
