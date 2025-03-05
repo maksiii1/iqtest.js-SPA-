@@ -21,6 +21,12 @@ body {
   transition: transform 0.3s;
 }
 
+@media screen and (max-width: 720px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
 .sidebar.open {
   transform: translateX(0);
 }
@@ -238,10 +244,6 @@ body {
   .last-page__info {
     text-align: center;
   }
-
-  .sidebar {
-    width: 100%;
-  }
 }
 
 .recommendations__button {
@@ -271,13 +273,13 @@ body {
   font-size: 15px;
 }
 
-.last-page__span-1,
+.last-page__info-1,
 .last-page__info-3 {
   color: rgba(255, 199, 0, 1);
 }
 
 .last-page__info-3,
 .last-page__info-2,
-.last-page__span-1 {
+.last-page__info-1 {
   font-family: Merriweather, serif;
 }
