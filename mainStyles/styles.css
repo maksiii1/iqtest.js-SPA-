@@ -21,7 +21,7 @@ body {
   transition: transform 0.3s;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 400px) {
   .sidebar {
     width: 100%;
   }
@@ -168,7 +168,7 @@ body {
   z-index: 3;
   width: 100%;
   transform: translateY(100%);
-  transition: transform 0.2s;
+  transition: transform 0.3s;
 }
 
 .container__details.open {
@@ -239,10 +239,17 @@ body {
   color: rgba(39, 39, 39, 1);
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 400px) {
   .recommendations__info,
-  .last-page__info {
+  .last-page__info,
+  .info-block__text {
     text-align: center;
+  }
+
+  .last-page__info-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -282,4 +289,30 @@ body {
 .last-page__info-2,
 .last-page__info-1 {
   font-family: Merriweather, serif;
+}
+
+.last-page__info-block {
+  height: 216px;
+  margin: 22px 9px 0;
+  background-color: rgba(243, 243, 242, 0.8);
+  border-radius: 20px;
+}
+
+.info-block__text {
+  color: rgba(24, 24, 24, 1);
+  width: 277px;
+  line-height: 23px;
+  padding: 20px 0 0 14px;
+  font-size: 21px;
+}
+
+@media screen and (min-width: 400px) {
+  .info-block__text {
+    padding: 0;
+  }
+}
+
+.info-block__span {
+  font-family: Merriweather, serif;
+  font-size: 18px;
 }
