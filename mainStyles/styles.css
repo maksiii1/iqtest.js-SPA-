@@ -25,12 +25,6 @@ body {
   transform: translateX(0);
 }
 
-@media screen and (max-width: 720px) {
-  .sidebar {
-    width: 100%;
-  }
-}
-
 .menu__cross {
   position: absolute;
   width: 28px;
@@ -132,11 +126,11 @@ body {
   text-align: center;
 }
 
-.info3__span1 {
+.additional-info__span1 {
   color: rgba(255, 199, 0, 1);
 }
 
-.info3__span2 {
+.additional-info__span2 {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -163,7 +157,6 @@ body {
 }
 
 .container__details {
-  visibility: hidden;
   position: absolute;
   top: 0;
   z-index: 3;
@@ -174,7 +167,6 @@ body {
 
 .container__details.open {
   transform: translateY(0);
-  visibility: visible;
 }
 
 .details__benefits {
@@ -242,8 +234,13 @@ body {
 }
 
 @media screen and (min-width: 720px) {
-  .recommendations__info {
+  .recommendations__info,
+  .last-page__info {
     text-align: center;
+  }
+
+  .sidebar {
+    width: 100%;
   }
 }
 
@@ -257,4 +254,30 @@ body {
   text-align: center;
   font-family: Merriweather, serif;
   margin-bottom: 40px;
+}
+
+.details__last-page {
+  overflow: auto;
+  height: 533px;
+  background-image: url("../images/rain_bk2.png");
+  background-size: cover;
+  color: rgba(255, 255, 255, 1);
+}
+
+.last-page__info {
+  margin: 56px 0 0 11px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+.last-page__span-1,
+.last-page__info-3 {
+  color: rgba(255, 199, 0, 1);
+}
+
+.last-page__info-3,
+.last-page__info-2,
+.last-page__span-1 {
+  font-family: Merriweather, serif;
 }
