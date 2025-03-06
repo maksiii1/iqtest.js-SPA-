@@ -167,6 +167,8 @@ body {
   top: 0;
   z-index: 3;
   width: 100%;
+  height: 100%;
+  overflow-y: auto;
   transform: translateY(100%);
   transition: transform 0.3s;
 }
@@ -176,8 +178,7 @@ body {
 }
 
 .details__benefits {
-  overflow-y: auto;
-  height: 100%;
+  height: 339px;
   background-image: radial-gradient(
       rgba(41, 80, 194, 1),
       rgba(38, 91, 199, 0.5),
