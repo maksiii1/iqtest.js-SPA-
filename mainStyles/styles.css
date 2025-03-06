@@ -7,7 +7,7 @@
 html,
 body {
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .sidebar {
@@ -21,14 +21,14 @@ body {
   transition: transform 0.3s;
 }
 
-@media screen and (max-width: 400px) {
+.sidebar.open {
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 600px) {
   .sidebar {
     width: 100%;
   }
-}
-
-.sidebar.open {
-  transform: translateX(0);
 }
 
 .menu__cross {
@@ -38,7 +38,7 @@ body {
   background-image: url("../images/cross.png");
   background-size: cover;
   top: 18px;
-  left: 89%;
+  right: 3%;
 }
 
 .sidebar_menu {
