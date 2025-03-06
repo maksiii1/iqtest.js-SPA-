@@ -271,7 +271,7 @@ body {
   margin-bottom: 40px;
 }
 
-.details__last-pag {
+.details__last-page {
   overflow: auto;
   height: 533px;
   background-image: url("../images/rain_bk2.png");
