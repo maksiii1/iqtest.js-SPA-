@@ -24,13 +24,17 @@
       <div class="sidebar">
         <div class="sidebar_menu">
           <div class="menu__cross" onclick="show_hide_sidebar()"></div>
-          <a class="menu__item-home">ГЛАВНАЯ</a>
-          <a class="menu__item-info">ИНФОРМАЦИЯ О ТЕСТЕ</a>
+          <a class="menu__item-home" href="#home" onclick="show_hide_sidebar()"
+            >ГЛАВНАЯ</a
+          >
+          <a class="menu__item-info" href="#" onclick="show_hide_details()"
+            >ИНФОРМАЦИЯ О ТЕСТЕ</a
+          >
           <a class="menu__item-start-test">ПРОЙТИ ТЕСТ</a>
         </div>
       </div>
 
-      <div class="container">
+      <div class="container" id="home">
         <div class="header">
           <div class="header__burger" onclick="show_hide_sidebar()">
             <div class="burger__bar"></div>
@@ -109,7 +113,13 @@
           <button class="info-block__button">ПРОЙТИ ТЕСТ</button>
         </div>
       </div>
+
+      <div id="content">
+        <h1>Добро пожаловать!</h1>
+        <p>Выберите пункт меню для просмотра.</p>
+      </div>
     </div>
-    <script src="../functional/script.js"></script>
+    <script src="../functional/view-details.js"></script>
+    <script src="../functional/form-functional.js"></script>
   </body>
 </html>
