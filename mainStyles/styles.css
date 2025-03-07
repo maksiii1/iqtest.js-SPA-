@@ -304,6 +304,8 @@ body {
 }
 
 .last-page__info-block {
+  position: relative;
+  z-index: 2;
   height: 216px;
   margin: 22px 9px 0;
   background-color: rgba(243, 243, 242, 0.8);
@@ -348,4 +350,23 @@ a:hover {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 2px;
+}
+
+.details__last-page img {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  margin-top: 53px;
+  width: 131px;
+  height: 230px;
+}
+
+.details__last-page img:first-child {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  margin-top: 271px;
+  width: 130px;
+  height: 230px;
+  transform: none;
 }
