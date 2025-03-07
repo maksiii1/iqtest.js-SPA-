@@ -100,6 +100,26 @@ body {
   padding-bottom: 20px;
 }
 
+.main img {
+  display: none;
+}
+
+@media screen and (min-width: 400px) {
+  .main {
+    background-image: url("../images/rain_bk2.png");
+  }
+
+  .main img {
+    display: block;
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-55%, -55%);
+    width: 200px;
+    height: 200px;
+  }
+}
+
 .main__subtitle {
   color: rgb(255, 255, 255);
   padding-top: 27px;
@@ -128,6 +148,12 @@ body {
   padding: 10px;
   text-align: center;
   font-family: Merriweather, serif;
+}
+
+@media screen and (min-width: 400px) {
+  .main__button {
+    margin: 255px auto 0;
+  }
 }
 
 .main__additional-info {
