@@ -175,8 +175,8 @@ body {
   background-position: center;
   background-size: contain;
   height: 16px;
-  width: 100%;
-  margin-top: 20px;
+  width: 16px;
+  margin: 20px auto 0;
 }
 
 .main__arrow:hover {
