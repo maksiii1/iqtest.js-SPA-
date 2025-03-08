@@ -24,13 +24,22 @@
       <div class="sidebar">
         <div class="sidebar_menu">
           <div class="menu__cross" onclick="show_hide_sidebar()"></div>
-          <a class="menu__item-home" href="#home" onclick="show_hide_sidebar()"
+          <a
+            class="menu__item-home"
+            href="#home"
+            onclick="goToHomePage(); show_hide_sidebar()"
             >ГЛАВНАЯ</a
           >
           <a class="menu__item-info" href="#" onclick="show_hide_details()"
             >ИНФОРМАЦИЯ О ТЕСТЕ</a
           >
-          <a class="menu__item-start-test">ПРОЙТИ ТЕСТ</a>
+          <a
+            class="menu__item-start-test"
+            id="startTest"
+            href="#"
+            onclick="startTest(); show_hide_sidebar()"
+            >ПРОЙТИ ТЕСТ</a
+          >
         </div>
       </div>
 
@@ -47,7 +56,9 @@
           <img src="../images/rain_bk3.png" alt="brain" />
           <div class="main__subtitle">Пройдите точный и быстрый</div>
           <div class="main__title">ТЕСТ НА <br />ОПРЕДЕЛЕНИЕ <br />IQ</div>
-          <button class="main__button">ПРОЙТИ ТЕСТ</button>
+          <button class="main__button" onclick="startTest()">
+            ПРОЙТИ ТЕСТ
+          </button>
           <div class="main__additional-info">
             <span class="additional-info__span1"
               >И получите рекомендации <br />по развитию своего интеллектa</span
@@ -83,7 +94,9 @@
             которая принесет вам скорейший<br />
             финансовый результат.
           </div>
-          <button class="recommendations__button">ПРОЙТИ ТЕСТ</button>
+          <button class="recommendations__button" onclick="startTest()">
+            ПРОЙТИ ТЕСТ
+          </button>
         </div>
         <div class="details__last-page">
           <img src="../images/lightning.png" alt="lightning" />
@@ -110,13 +123,25 @@
               от финансового до любовного.
             </div>
           </div>
-          <button class="info-block__button">ПРОЙТИ ТЕСТ</button>
+          <button class="info-block__button" onclick="startTest()">
+            ПРОЙТИ ТЕСТ
+          </button>
         </div>
       </div>
 
-      <div id="content">
-        <h1>Добро пожаловать!</h1>
-        <p>Выберите пункт меню для просмотра.</p>
+      <div id="testContainer" class="test-container" style="display: none">
+        <div class="test-header">
+          <h2 id="questionNumber">Вопрос 1</h2>
+        </div>
+        <div id="questionContent" class="question-content"></div>
+        <button
+          id="nextButton"
+          class="next-button"
+          onclick="nextQuestion()"
+          disabled
+        >
+          Далее
+        </button>
       </div>
     </div>
     <script src="../functional/view-details.js"></script>
