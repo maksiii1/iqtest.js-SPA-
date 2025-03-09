@@ -50,12 +50,6 @@ function selectAnswer(answer) {
 }
 
 function nextQuestion() {
-  if (selectedAnswer === questions[currentQuestionIndex].correct) {
-    console.log("Правильный ответ!");
-  } else {
-    console.log("Неправильный ответ!");
-  }
-
   currentQuestionIndex++;
   if (currentQuestionIndex < questions.length) {
     loadQuestion();

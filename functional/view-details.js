@@ -1,12 +1,12 @@
 function show_hide_sidebar() {
-  const sidebar = document.getElementsByClassName("sidebar")[0];
+  const sidebar = document.querySelector(".sidebar");
   if (sidebar) {
     sidebar.classList.toggle("open");
   }
 }
 
 function show_hide_details() {
-  const details = document.getElementsByClassName("container__details")[0];
+  const details = document.querySelector(".container__details");
   if (details) {
     details.classList.toggle("open");
   }
