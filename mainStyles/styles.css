@@ -414,6 +414,29 @@ a:hover {
 
 .test-header {
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.test-header__title {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  margin: -115px 0 0 28px;
+}
+
+.test-header__brain {
+  width: 48px;
+  height: 47px;
+  margin-right: 10px;
+}
+
+.test-header__text {
+  font-size: 16px;
+  font-family: Yeseva One, serif;
+  color: rgba(255, 199, 0, 1);
+  margin-left: 10px;
 }
 
 #questionNumber {
