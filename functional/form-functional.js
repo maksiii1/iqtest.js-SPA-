@@ -27,7 +27,6 @@ function startTest() {
 
 function loadQuestion() {
   const question = questions[currentQuestionIndex];
-
   const questionContent = document.getElementById("questionContent");
   questionContent.innerHTML = "";
 
@@ -37,18 +36,37 @@ function loadQuestion() {
 
   question.answers.forEach((answer) => {
     const button = document.createElement("button");
-    button.textContent = answer;
     button.classList.add("answer-button");
-    button.onclick = () => selectAnswer(answer);
+
+    const circle = document.createElement("span");
+    circle.classList.add("circle");
+
+    const text = document.createElement("span");
+    text.textContent = answer;
+
+    button.appendChild(circle);
+    button.appendChild(text);
+
+    button.onclick = () => selectAnswer(button, circle, answer);
     questionContent.appendChild(button);
   });
+
+  updateProgress();
 }
 
-let selectedAnswer = "";
+function selectAnswer(button, circle, answer) {
+  const buttons = document.querySelectorAll(".answer-button");
+  buttons.forEach((btn) => {
+    btn.classList.remove("selected");
+    const circle = btn.querySelector(".circle");
+    circle.style.backgroundColor = "white";
+  });
 
-function selectAnswer(answer) {
-  selectedAnswer = answer;
+  button.classList.add("selected");
+  circle.style.backgroundColor = "blue";
+
   document.getElementById("nextButton").disabled = false;
+  selectedAnswer = answer;
 }
 
 function nextQuestion() {
@@ -56,8 +74,18 @@ function nextQuestion() {
   if (currentQuestionIndex < questions.length) {
     loadQuestion();
     document.getElementById("nextButton").disabled = true;
+
+    const progressBar = document.getElementById("progressBar");
+    const progressPercentage = (currentQuestionIndex / questions.length) * 100;
+    progressBar.style.width = `${progressPercentage}%`;
   } else {
     document.getElementById("testContainer").innerHTML =
       "<h2>Тест завершен!</h2>";
   }
+}
+
+function updateProgress() {
+  const progressBar = document.querySelector(".test-header__progress-bar");
+  const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
+  progressBar.style.width = `${progress}%`;
 }
