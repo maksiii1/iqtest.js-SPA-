@@ -1,19 +1,20 @@
 let currentQuestionIndex = 0;
 const questions = [
   {
-    question: "Какое число идет следом за 5?",
-    answers: ["4", "5", "6", "7"],
-    correct: "6",
+    question: "Ваш пол:",
+    answers: ["Мужчина", "Женщина"],
   },
   {
-    question: "Сколько будет 2 + 2?",
-    answers: ["3", "4", "5", "6"],
-    correct: "4",
+    question: "Укажите ваш возраст:",
+    answers: ["До 18", "От 18 до 28", "От 29 до 35", "От 36"],
   },
   {
-    question: "Какой цвет смешивается с синим для получения фиолетового?",
-    answers: ["Красный", "Зеленый", "Желтый", "Розовый"],
-    correct: "Красный",
+    question: "Выберите лишнее:",
+    answers: ["Дом", "Шалаш", "Бунгало", "Скамейка", "Хижина"],
+  },
+  {
+    question: "Продолжите числовой ряд: 18 20 24 32",
+    answers: [62, 48, 74, 57, 60, 77],
   },
 ];
 
@@ -26,12 +27,13 @@ function startTest() {
 
 function loadQuestion() {
   const question = questions[currentQuestionIndex];
-  document.getElementById("questionNumber").textContent = `Вопрос ${
-    currentQuestionIndex + 1
-  }`;
 
   const questionContent = document.getElementById("questionContent");
   questionContent.innerHTML = "";
+
+  const questionText = document.createElement("h3");
+  questionText.textContent = question.question;
+  questionContent.appendChild(questionText);
 
   question.answers.forEach((answer) => {
     const button = document.createElement("button");
