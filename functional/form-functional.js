@@ -117,11 +117,11 @@ function selectAnswer(button, circle, answer) {
   buttons.forEach((btn) => {
     btn.classList.remove("selected");
     const circle = btn.querySelector(".circle");
-    circle.style.backgroundColor = "white";
   });
 
   button.classList.add("selected");
-  circle.style.backgroundColor = "blue";
+  circle.style.backgroundColor = "rgb(41, 80, 194)";
+  circle.style.borderColor = "rgb(39, 39, 39)";
 
   document.getElementById("nextButton").disabled = false;
   selectedAnswer = answer;
