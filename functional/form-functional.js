@@ -114,14 +114,13 @@ function loadQuestion() {
 
 function selectAnswer(button, circle, answer) {
   const buttons = document.querySelectorAll(".answer-button");
+
   buttons.forEach((btn) => {
     btn.classList.remove("selected");
     const circle = btn.querySelector(".circle");
   });
 
   button.classList.add("selected");
-  circle.style.backgroundColor = "rgb(41, 80, 194)";
-  circle.style.borderColor = "rgb(39, 39, 39)";
 
   document.getElementById("nextButton").disabled = false;
   selectedAnswer = answer;

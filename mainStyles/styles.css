@@ -563,3 +563,8 @@ a:hover {
   width: 0%;
   transition: width 0.3s;
 }
+
+.answer-button.selected .circle {
+  background-color: rgb(41, 80, 194);
+  border-color: rgb(39, 39, 39);
+}
