@@ -135,7 +135,6 @@ function nextQuestion() {
 
     const progressBar = document.getElementById("progressBar");
     const progressPercentage = (currentQuestionIndex / questions.length) * 100;
-    progressBar.style.width = `${progressPercentage}%`;
   } else {
     document.getElementById("testContainer").innerHTML =
       "<div>Обработка результатов</div>";
