@@ -523,7 +523,7 @@ a:hover {
 .test-header__progress {
   width: 80%;
   background-color: rgba(242, 243, 243, 1);
-  height: 8px;
+  height: 11px;
   margin: -50px auto 100px;
   border-radius: 10.5px;
 }

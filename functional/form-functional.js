@@ -19,15 +19,15 @@ const questions = [
   // {
   //   question: "Выберите цвет, который сейчас наиболее вам приятен:",
   //   answer: [
-  //     rgb(168, 168, 168),
-  //     rgb(0, 0, 169),
-  //     rgb(0, 167, 1),
-  //     rgb(246, 1, 0),
-  //     rgb(253, 255, 25),
-  //     rgb(169, 84, 3),
-  //     rgb(0, 0, 0),
-  //     rgb(133, 0, 104),
-  //     rgb(70, 178, 172),
+  //     "rgb(168, 168, 168)",
+  //     "rgb(0, 0, 169)",
+  //     "rgb(0, 167, 1)",
+  //     "rgb(246, 1, 0)",
+  //     "rgb(253, 255, 25)",
+  //     "rgb(169, 84, 3)",
+  //     "rgb(0, 0, 0)",
+  //     "rgb(133, 0, 104)",
+  //     "rgb(70, 178, 172)",
   //   ],
   // },
   // {
@@ -138,7 +138,7 @@ function nextQuestion() {
     progressBar.style.width = `${progressPercentage}%`;
   } else {
     document.getElementById("testContainer").innerHTML =
-      "<h2>Тест завершен!</h2>";
+      "<div>Обработка результатов</div>";
   }
 }
 
