@@ -568,3 +568,8 @@ a:hover {
   background-color: rgb(41, 80, 194);
   border-color: rgb(39, 39, 39);
 }
+
+.container-nextButton {
+  display: flex;
+  justify-content: center;
+}
