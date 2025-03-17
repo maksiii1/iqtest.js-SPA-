@@ -1,1 +1,2 @@
-TZ/IQ_Test
+IQ_Test
+SPA 
