@@ -569,7 +569,7 @@ a:hover {
   border-color: rgb(39, 39, 39);
 }
 
-.container-nextButton {
+.container-next-button {
   display: flex;
   justify-content: center;
 }
